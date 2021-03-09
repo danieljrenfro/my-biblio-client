@@ -65,6 +65,7 @@ class RegistrationForm extends Component {
             ref={this.firstInput}
             id="registration-name-input"
             name="name"
+            type="text"
             required
           />
 
@@ -72,6 +73,7 @@ class RegistrationForm extends Component {
           <input 
             id="registration-username-input"
             name="username"
+            type="text"
             required
           />
 
@@ -79,6 +81,7 @@ class RegistrationForm extends Component {
           <input 
             id="registration-password-input"
             name="password"
+            type="password"
             required
           />
 

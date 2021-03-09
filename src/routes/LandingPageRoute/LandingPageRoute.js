@@ -10,3 +10,5 @@ class LandingPageRoute extends Component {
     )
   }
 }
+
+export default LandingPageRoute;

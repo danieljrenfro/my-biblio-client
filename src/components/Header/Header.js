@@ -14,7 +14,7 @@ class Header extends Component {
 
   renderPrivateNav() {
     return (
-      <div>
+      <div className="user-nav">
         <span className="user-name">
           {this.context.user.name}
         </span>
@@ -33,9 +33,9 @@ class Header extends Component {
   renderPublicNav() {
     return (
       <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/login'>Login</Link>
-        <Link to='/register'>Sign up</Link>
+        <Link to='/'>HOME</Link>
+        <Link to='/login'>LOGIN</Link>
+        <Link to='/register'>SIGNUP</Link>
       </nav>
     )
   }

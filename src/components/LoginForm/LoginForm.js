@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AuthApiService from '../../services/auth-api-service';
 import UserContext from '../../contexts/UserContext';
 
+import './LoginForm.css';
+
 class LoginForm extends Component {
   static defaultProps = {
     onLoginSuccess: () => {}
@@ -52,7 +54,7 @@ class LoginForm extends Component {
             ref={this.firstInput}
             id="login-username-input" 
             name="username" 
-            placeholder="Username"
+            type="text"
             required
           />
 
@@ -60,7 +62,7 @@ class LoginForm extends Component {
           <input
             id="login-password-input"
             name="password"
-            placeholder="Password"
+            type="password"
             required
           />
 

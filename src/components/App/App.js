@@ -3,8 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 
 // COMPONENTS
 import Header from '../Header/Header';
-import PublicOnlyRoute from '../PublicOnlyRoute';
-import PrivateRoute from '../PrivateRoute';
+import PublicOnlyRoute from '../PublicOnlyRoute/PublicOnlyRoute';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 // ROUTES
 import LandingPageRoute from '../../routes/LandingPageRoute/LandingPageRoute';
