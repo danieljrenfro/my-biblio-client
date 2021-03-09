@@ -8,3 +8,21 @@ h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
+.btn {
+  background-color: #ECE2D0;
+  height: 2.5rem;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #392A16;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #392A16;
+  color: #ECE2D0;
+  letter-spacing: 1px;
+  transition: all 0.7s ease;
+}

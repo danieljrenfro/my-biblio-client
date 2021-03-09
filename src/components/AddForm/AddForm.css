@@ -1,20 +1,21 @@
-.registration-form {
+.add-form {
   display: flex;
   flex-direction: column;
   width: 90%;
   background-color: #B86F52;
   padding: 20px;
   border-radius: 3px;
+  margin: auto;
 }
 
-.registration-form > label {
+.add-form > label {
   color: #392A16;
   margin-bottom: 5px;
   font-size: 24px;
 
 }
 
-.registration-form > input {
+.add-form > input, select {
   background-color: #ECE2D0;
   height: 2.5rem;
   margin-bottom: 8px;
@@ -25,8 +26,17 @@
   color: #392A16;
 }
 
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-form > .form-buttons > button {
+  width: 48%;
+}
+
 @media all and (min-width: 600px) {
-  .registration-form {
+  .add-form {
     width: 60%;
   }
 }
