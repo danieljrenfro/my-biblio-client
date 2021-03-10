@@ -3,28 +3,29 @@ import UserContext from '../../contexts/UserContext';
 
 import Book from '../Book/Book';
 
-import './LibraryBooks.css';
+import './BorrowedBooks.css';
 
-class LibraryBooks extends Component {
+class BorrowedBooks extends Component {
   static contextType = UserContext;
 
-  renderBooks = () => {
-    if (this.context.books) {
-      const books = this.context.books.map(book => {
+  renderBorrowedBooks = () => {
+    if (this.context.borrowedBooks) {
+      const books = this.context.borrowedBooks.map(book => {
         return <Book key={book.id} book={book}/>
       })
   
       return books;
     }
   }
+  
 
   render() {
     return (
-      <div className="all-books">
-        {this.renderBooks()}
+      <div className="borrowed-books">
+        {this.renderBorrowedBooks()}
       </div>
     )
   }
 }
 
-export default LibraryBooks;
+export default BorrowedBooks;

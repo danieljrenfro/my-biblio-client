@@ -2,6 +2,19 @@ import TokenService from './token-service';
 import config from '../config';
 
 const BorrowsApiService = {
+  getBorrows() {
+    return fetch(`${config.API_ENDPOINT}/borrows`, {
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `Bearer ${TokenService.getAuthToken()}`
+      }
+    })
+      .then(res => 
+        (!res.ok)
+          ? res.json().then(e => Promise.reject(e))
+          : res.json()  
+      )
+  },
   postBorrow(name, book_id) {
     return fetch(`${config.API_ENDPOINT}/borrows`, {
       method: `POST`,

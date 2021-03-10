@@ -37,7 +37,6 @@ class Book extends Component {
 
     if (mode === 'lend')
       return <BookLend updateBookMode={this.updateMode} book={book}/>
-    
   }
 
   render() {

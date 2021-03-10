@@ -71,8 +71,8 @@ class BookBorrow extends Component {
 
     return (
       <>
-        {borrow.name && <p>Borrowed By: {borrow.name}</p>}
-        {borrow.date && <p>Borrowed Date: {this.generateDateString()}</p>}
+        {borrow && <p>Borrowed By: {borrow.name}</p>}
+        {borrow && <p>Borrowed Date: {this.generateDateString()}</p>}
         <button 
           className="book-btn" 
           onClick={() => updateBookMode('details')} 

@@ -39,18 +39,19 @@ class BookLend extends Component {
     )
       .then(borrow => {
         BooksApiService.markBorrowed(borrow.book_id, borrowedBook)
-          .then(() => this.context.setBooks(
-            this.context.books.map(book => {
+          .then(() => {
+            const books = this.context.books.map(book => {
               if (book.id === borrow.book_id)
                 return {
-                  borrowed: true,
                   ...book,
+                  borrowed: true,
                 }
               else
                 return book;
             })
-          ))
-          .then(() => { this.props.updateBookMode('borrowed')})
+            this.props.updateBookMode('borrowed');
+            this.context.setBooks(books);
+          })
       })
       .catch(res => {
         this.setState({ error: res.error })

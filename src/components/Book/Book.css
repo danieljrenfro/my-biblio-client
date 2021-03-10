@@ -4,8 +4,9 @@
   margin: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-bottom: 10px;
-  width: 100%
+  width: 100%;
 }
 
 .book > p {
@@ -44,5 +45,10 @@
 @media all and (min-width: 600px) {
   .book {
     width: 30vw;
+    height: 27em;
+  }
+
+  .book-title {
+    height: 90px;
   }
 }

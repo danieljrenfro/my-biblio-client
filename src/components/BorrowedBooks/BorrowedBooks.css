@@ -1,0 +1,13 @@
+.borrowed-books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 600px) {
+  .borrowed-books {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

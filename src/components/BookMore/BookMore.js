@@ -43,13 +43,13 @@ class BookMore extends Component {
         >
           Details
         </button>
-        <button 
+        {!book.borrowed && <button 
           onClick={() => updateBookMode('lend')} 
           className="book-btn" 
           type="button"
         >
           Lend
-        </button>
+        </button>}
         <button
           onClick={() => updateBookMode('edit')}  
           className="book-btn" 
