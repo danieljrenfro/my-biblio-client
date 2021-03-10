@@ -1,0 +1,13 @@
+.all-books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 600px) {
+  .all-books {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

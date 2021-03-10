@@ -1,0 +1,48 @@
+.book {
+  border: 2px solid #392A16;
+  border-radius: 3px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  width: 100%
+}
+
+.book > p {
+  padding: 0px 10px 0px 10px;
+  margin: 15px 0px 15px 0px;
+}
+
+.book-btn {
+  background-color: #392A16;
+  color: #ECE2D0;
+  height: 2.5rem;
+  width: 90%;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: center;
+  margin: 10px;
+}
+
+.book-btn:hover, .book-btn:focus {
+  background-color: #B86F52;
+  color: #392A16;
+  letter-spacing: 1px;
+  transition: all 0.7s ease;
+}
+
+.book-title {
+  background-color: #392A16;
+  color: #ECE2D0;
+  padding: 15px 10px 15px 10px;
+  margin: 0px;
+}
+
+@media all and (min-width: 600px) {
+  .book {
+    width: 30vw;
+  }
+}

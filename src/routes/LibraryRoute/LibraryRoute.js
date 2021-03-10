@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import UserContext from '../../contexts/UserContext';
 import BooksApiService from '../../services/books-api-service';
 
+import LibraryBooks from '../../components/LibraryBooks/LibraryBooks';
 import AddBook from '../../components/AddBook/AddBook';
 
 import './LibraryRoute.css';
@@ -21,6 +22,7 @@ class LibraryRoute extends Component {
       <section className="library-page">
         <h2>Your Library</h2>
         <AddBook />
+        <LibraryBooks />
       </section>
     )
   }

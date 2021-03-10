@@ -1,4 +1,6 @@
-export default {
+const config = {
   API_ENDPOINT: process.env.REACT_APP_API_BASE || 'http://localhost:8000/api',
   TOKEN_KEY: 'myBiblio-client-auth-token'
 }
+
+export default config;

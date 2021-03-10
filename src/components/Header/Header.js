@@ -19,6 +19,16 @@ class Header extends Component {
           {this.context.user.name}
         </span>
         <nav>
+          <Link
+            to='/library'
+          >
+            Library
+          </Link>
+          <Link
+            to='/borrowed'
+          >
+            Borrowed
+          </Link>
           <Link 
             onClick={this.handleLogoutClick}
             to='/login'
